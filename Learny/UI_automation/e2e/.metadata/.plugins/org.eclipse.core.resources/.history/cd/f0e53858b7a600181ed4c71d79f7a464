@@ -1,0 +1,31 @@
+package testCases;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+
+import objectRepository.student_repo;
+import testCasesAndMethods.Signup_flow;
+
+public class Testcase_01 extends student_repo
+{
+	@Test
+	public static void testcase_01() throws Exception
+	{	
+		driver.get("http://learnnew.learnyst.com/learn/login");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Signup_flow.signupFlow();
+		if( student_repo.EmailAlert().isDisplayed()){
+			System.out.println("Test case 1: Verify whether the confirm email alret is displayed or not");
+			System.out.println("Result: Pass");
+			System.out.println(" ");
+			}
+		else{
+			System.out.println("Test case 1: Verify whether the confirm email alret is displayed or not");
+			System.out.println("Result: Fail");
+			System.out.println(" ");
+			}
+		Thread.sleep(4000);
+	}
+
+}

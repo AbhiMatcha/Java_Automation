@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testCases.student">
+	<listeners>
+        <listener class-name="listeners.listenerTestNG"/>
+    </listeners>
+    
+ 	<test name="testngTest">
+ 		<classes>
+ 		<class name="e2e_Suites.mainClass" />
+ 		</classes>
+ 	</test>
+</suite>
