@@ -71,8 +71,8 @@ public abstract class baseClass implements IRetryAnalyzer
          * machine.
          */
 
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Mac/chromedriver");
-//        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Ubuntu/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Mac/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Ubuntu/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
