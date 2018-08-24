@@ -9,8 +9,5 @@
  		<classes>
  		<class name="e2e_Suites.PositiveRun" />
  		</classes>
- 		<classes>
- 		<class name="e2e_Suites.NegativeRun" />
- 		</classes>
  	</test>
 </suite>
